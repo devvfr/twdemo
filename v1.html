@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Buy Fashion for Men online in India - Take & Wear</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;scrollbar-width:none;-ms-overflow-style:none}
+  ::-webkit-scrollbar{display:none}
+  body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:#f3f4f6;color:#111;-webkit-font-smoothing:antialiased}
+  a{text-decoration:none;color:inherit}
+  img{display:block;width:100%;object-fit:cover}
+  .app{width:100%;margin:0 auto;background:#fff;min-height:100vh;position:relative;padding-bottom:64px}
+  .announcement{background:#000;color:#fff;text-align:center;padding:8px 32px;font-size:11px;letter-spacing:.5px;font-weight:500;position:relative}
+  .announcement-close{position:absolute;right:8px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:#fff;padding:4px;display:flex;align-items:center;justify-content:center}
+
+  .header-wrap{position:sticky;top:0;z-index:10;background:#fff}
+  .header{background:#fff;height:60px;display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:0.5rem 1rem;position:relative}
+  .header-left{display:flex;align-items:center}
+  .header-center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center}
+  .header-logo{height:40px;width:auto;object-fit:contain}
+  .header-right{display:flex;gap:14px;align-items:center;justify-content:flex-end}
+  .header-search{display:flex;align-items:center;background:none;border:none;padding:0;cursor:pointer;text-decoration:none;color:inherit}
+  .header-search svg{flex-shrink:0;width:22px;height:22px;stroke:#000;stroke-width:1.5px;pointer-events:none}
+  .header-search input{display:none;border:none;outline:none;font-size:12px;font-weight:400;color:#333;background:transparent;width:100%;letter-spacing:.2px;font-family:inherit}
+  .header-search input::placeholder{color:#999;font-weight:400}
+
+  .mobile-search-bar{display:flex;align-items:center;padding:0 20px 12px;background:#fff;gap:12px}
+  .mobile-search-bar .hamburger{width:auto;height:auto;padding:6px;margin-left:-6px}
+  .search-box{display:flex;align-items:center;background:#f3f4f6;border-radius:6px;padding:9px 12px;gap:8px;flex:1}
+  .search-box svg{flex-shrink:0;width:16px;height:16px;stroke:#666;stroke-width:2px}
+  .search-box input{border:none;outline:none;background:transparent;width:100%;font-size:13px;color:#111;letter-spacing:.2px;font-family:inherit}
+  .search-box input::placeholder{color:#888}
+  .hide-on-mobile{display:none !important}
+  .header-icon-btn{background:none;border:none;cursor:pointer;padding:0;display:flex;align-items:center;position:relative}
+  .notification-dot{position:absolute;top:-1px;right:1px;width:8px;height:8px;background:#e11d48;border-radius:50%;border:1.5px solid #fff}
+  .hamburger{background:none;border:none;cursor:pointer;width:56px;height:56px;padding:16px;display:flex;align-items:center;justify-content:center}
+  .header-subnav{display:flex;align-items:center;justify-content:flex-start;gap:32px;padding:8px 20px;border-top:1px solid #e8e8e8;border-bottom:1px solid #e8e8e8;background:#fff;overflow-x:auto;scrollbar-width:none}
+  .header-subnav::-webkit-scrollbar{display:none}
+  .header-subnav a{font-size:13px;font-weight:500;color:#333;letter-spacing:.3px;white-space:nowrap;padding-bottom:2px;border-bottom:1.5px solid transparent;transition:all .2s}
+  .header-subnav a:hover{color:#000;border-bottom-color:#000}
+  .header-subnav a.active{color:#000;font-weight:600;border-bottom-color:#000}
+
+  .carousel{position:relative;width:100%;overflow:hidden;background:#f5f5f5}
+  .carousel-track{display:flex;transition:transform .4s ease;width:max-content;position:relative}
+  .carousel-slide{width:100vw;flex:0 0 100vw;aspect-ratio:3/4;position:relative;overflow:hidden;transition:transform .4s ease, opacity .4s ease}
+  .carousel-slide img{width:100%;height:100%;object-fit:cover;pointer-events:none}
+  .carousel-badge{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,.65);color:#fff;font-size:12px;font-weight:700;letter-spacing:2.5px;padding:8px 24px;white-space:nowrap}
+  .carousel-dots{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);display:flex;gap:5px;z-index:5}
+  .carousel-dot{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.5);border:none;cursor:pointer;padding:0;transition:all .2s}
+  .carousel-dot.active{background:#fff;width:16px;border-radius:0}
+
+  .section{padding:24px 0}
+  .section-header{display:flex;align-items:center;justify-content:space-between;padding:0 20px 14px}
+  .section-title{font-size:13px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:#000}
+  .section-link{font-size:11px;color:#666;border-bottom:1px solid #999;letter-spacing:.5px;padding-bottom:1px}
+  .divider{height:8px;background:#f3f4f6}
+
+  .categories-scroll,.products-scroll,.occasion-grid,.steals-grid{display:flex;gap:12px;padding:0 20px;overflow-x:auto;scrollbar-width:none}
+  .categories-scroll::-webkit-scrollbar,.products-scroll::-webkit-scrollbar,.occasion-grid::-webkit-scrollbar,.steals-grid::-webkit-scrollbar{display:none}
+
+  .cat-item{flex-shrink:0;text-align:center;cursor:pointer}
+  .cat-img{width:76px;height:92px;overflow:hidden;background:#f0f0f0;margin-bottom:7px;transition:transform .2s}
+  .cat-item:hover .cat-img{transform:scale(1.04)}
+  .cat-label{font-size:9px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#333}
+
+  .product-card{flex-shrink:0;width:165px;cursor:pointer}
+  .product-img{width:165px;height:210px;overflow:hidden;background:#f0f0f0;position:relative}
+  .product-img img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+  .product-card:hover .product-img img{transform:scale(1.04)}
+  .product-badge{position:absolute;top:8px;left:8px;background:#000;color:#fff;font-size:9px;font-weight:700;letter-spacing:.5px;padding:2px 7px}
+  .wishlist-btn{position:absolute;top:8px;right:8px;width:28px;height:28px;background:rgba(255,255,255,.92);border-radius:50%;display:flex;align-items:center;justify-content:center;border:none;cursor:pointer;transition:background .2s}
+  .wishlist-btn:hover{background:#fff}
+  .product-info{padding:7px 0}
+  .product-title{font-size:12px;font-weight:600;color:#111;margin-bottom:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .product-type{font-size:10px;color:#888;margin-bottom:4px}
+  .product-price{font-size:13px;font-weight:700;color:#111}
+  .product-rating{display:flex;align-items:center;gap:3px;margin-top:2px}
+  .rating-count{font-size:10px;color:#888}
+  .colors-row{display:flex;gap:4px;margin-top:5px;align-items:center}
+  .color-dot{width:11px;height:11px;border-radius:50%;border:1px solid #ddd}
+
+  .occasion-item{flex-shrink:0;width:128px;text-align:center;cursor:pointer}
+  .occasion-img{width:128px;height:158px;overflow:hidden;background:#f0f0f0;margin-bottom:7px;transition:transform .2s}
+  .occasion-item:hover .occasion-img{transform:scale(1.03)}
+  .occasion-label{font-size:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:#222}
+
+  .steal-item{flex-shrink:0;width:148px;cursor:pointer}
+  .steal-img{width:148px;height:185px;overflow:hidden;background:#f0f0f0;margin-bottom:6px;position:relative;transition:transform .2s}
+  .steal-item:hover .steal-img{transform:scale(1.03)}
+
+  .banner-full{margin:12px 20px;overflow:hidden;cursor:pointer}
+  .banner-full img{width:100%;height:180px;object-fit:cover;transition:transform .3s}
+  .banner-full:hover img{transform:scale(1.02)}
+
+  .quick-banner{margin:4px 20px 12px;overflow:hidden;background:#111;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;cursor:pointer}
+  .quick-text{color:#fff;font-size:12px;font-weight:600}
+  .quick-sub{color:#aaa;font-size:10px;margin-top:3px}
+  .quick-badge{background:#fff;color:#000;font-size:9px;font-weight:800;padding:5px 10px;white-space:nowrap;letter-spacing:.5px}
+
+  .trust-bar{padding:18px 20px;background:#f9f9f9;margin:0 0 8px;display:flex;justify-content:space-around;text-align:center;flex-wrap:wrap;gap:12px}
+  .trust-item{min-width:60px}
+  .trust-icon{font-size:20px}
+  .trust-label{font-size:9px;font-weight:700;color:#333;margin-top:5px;letter-spacing:.5px}
+  .trust-sub{font-size:8px;color:#888;margin-top:2px}
+
+  .tag-row{display:flex;gap:7px;flex-wrap:wrap;padding:0 20px 14px}
+  .tag{background:#f3f4f6;font-size:10px;font-weight:600;padding:6px 14px;color:#333;cursor:pointer;letter-spacing:.3px;transition:all .2s}
+  .tag:hover{background:#e8e8e8}
+  .tag.active{background:#000;color:#fff}
+
+  .bottom-nav{position:fixed;bottom:0;left:0;right:0;height:64px;background:#fff;border-top:1px solid #e8e8e8;display:grid;grid-template-columns:repeat(4,1fr);z-index:200}
+  .nav-item{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;cursor:pointer;padding-top:6px;color:#888}
+  .nav-label{font-size:10px;font-weight:500;letter-spacing:.3px;color:inherit}
+  .nav-item.active{color:#000}
+  .nav-item.active .nav-label{font-weight:700}
+  .nav-item svg{stroke:currentColor;fill:none;transition:all .2s;stroke-width:1.5}
+  .nav-item.active svg{stroke-width:1.8}
+  .menu-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:998;opacity:0;pointer-events:none;transition:opacity 0.3s ease}
+  .menu-overlay.active{opacity:1;pointer-events:auto}
+  .side-menu{position:fixed;top:0;left:0;height:100vh;width:80%;max-width:320px;background:#fff;z-index:999;transform:translateX(-100%);transition:transform 0.3s ease;display:flex;flex-direction:column;box-shadow:2px 0 8px rgba(0,0,0,0.1)}
+  .side-menu.active{transform:translateX(0)}
+  .search-side-menu{position:fixed;top:0;right:0;height:100vh;width:100%;max-width:100%;background:#fff;z-index:999;transform:translateX(100%);transition:transform 0.3s ease;display:flex;flex-direction:column;box-shadow:-2px 0 8px rgba(0,0,0,0.1)}
+  .search-side-menu.active{transform:translateX(0)}
+  .drawer-search-box{flex:1;display:flex;align-items:center;background:transparent;border:1.5px solid #999;border-radius:0;padding:12px 12px;gap:8px}
+  .side-menu-header{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid #e8e8e8}
+  .side-menu-greeting{font-size:16px;color:#000}
+  .side-menu-content{flex:1;overflow-y:auto;padding:12px 0}
+  .side-menu-link{display:block;padding:14px 20px;font-size:15px;color:#333;text-decoration:none;font-weight:500;transition:background 0.2s}
+  .side-menu-link:hover{background:#f9fafb}
+  .side-menu-divider{height:1px;background:#e8e8e8;margin:12px 0}
+  .side-menu-section-title{font-size:12px;font-weight:700;color:#888;letter-spacing:1px;padding:16px 20px 8px;text-transform:uppercase}
+  .side-menu-sublink{display:block;padding:10px 20px 10px 32px;font-size:14px;color:#555;text-decoration:none;transition:background 0.2s}
+  .side-menu-sublink:hover{background:#f9fafb;color:#000}
+  .img-placeholder{width:100%;height:100%;background:linear-gradient(135deg,#e8e8e8 0%,#d0d0d0 100%);display:flex;align-items:center;justify-content:center;color:#aaa;font-size:10px}
+  .responsive-container{max-width:100%;margin:0 auto}
+  .checkout-sticky{position:sticky;bottom:64px;padding:16px;background:#fff;border-top:1px solid #e8e8e8;z-index:100}
+
+  /* PRODUCT PAGE */
+  .prod-header{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;position:sticky;top:0;background:#fff;z-index:50;border-bottom:1px solid #e8e8e8}
+  .prod-gallery-wrap{position:relative;width:100%}
+  .prod-gallery-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.8);border:none;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:10;box-shadow:0 2px 6px rgba(0,0,0,0.1);transition:background 0.2s}
+  .prod-gallery-btn:hover{background:#fff}
+  .prod-gallery-prev{left:12px}
+  .prod-gallery-next{right:12px}
+  .prod-gallery{position:relative;width:100%;display:flex;overflow-x:auto;scrollbar-width:none;scroll-snap-type:x mandatory;scroll-behavior:smooth}
+  .prod-gallery::-webkit-scrollbar{display:none}
+  .prod-slide{flex:0 0 100%;width:100%;aspect-ratio:3/4;scroll-snap-align:start;background:#f5f5f5}
+  .prod-slide img{width:100%;height:100%;object-fit:cover}
+  .prod-dots{display:flex;justify-content:center;gap:6px;padding:12px 0}
+  .prod-dot{width:6px;height:6px;border-radius:50%;background:#ccc;transition:all .2s;border:none;padding:0;cursor:pointer}
+  .prod-dot.active{background:#111;width:16px;border-radius:3px}
+  
+  .prod-info{padding:12px 20px 24px}
+  .prod-brand{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#666;margin-bottom:4px}
+  .prod-title{font-size:16px;font-weight:600;color:#111;margin-bottom:8px;line-height:1.3}
+  .prod-price-row{display:flex;align-items:baseline;gap:8px;margin-bottom:12px}
+  .prod-price{font-size:20px;font-weight:800;color:#111}
+  .prod-mrp{font-size:13px;color:#888;text-decoration:line-through}
+  .prod-discount{font-size:11px;font-weight:700;color:#16a34a;padding:2px 6px;background:#dcfce7;border-radius:4px}
+  
+  .prod-section-title{font-size:13px;font-weight:700;margin-bottom:12px;color:#111;display:flex;justify-content:space-between;align-items:center}
+  .prod-colors{display:flex;gap:12px;margin-bottom:24px}
+  .prod-color-btn{width:36px;height:36px;border-radius:50%;border:2px solid transparent;padding:2px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;background:none}
+  .prod-color-btn.active{border-color:#111}
+  .prod-color-inner{width:100%;height:100%;border-radius:50%;border:1px solid rgba(0,0,0,0.1)}
+  
+  .prod-sizes{display:flex;gap:12px;margin-bottom:24px;flex-wrap:wrap}
+  .prod-size-btn{min-width:48px;height:48px;border:1px solid #e8e8e8;background:#fff;border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:600;color:#333;cursor:pointer;transition:all .2s}
+  .prod-size-btn.active{border-color:#111;background:#fff;color:#111;font-weight:800}
+  .prod-size-btn.disabled{opacity:0.4;background:#f9f9f9;text-decoration:line-through;cursor:not-allowed}
+  
+  .prod-pincode{display:flex;border:1px solid #e8e8e8;border-radius:4px;overflow:hidden;margin-bottom:24px}
+  .prod-pincode input{flex:1;border:none;padding:12px 16px;outline:none;font-size:13px}
+  .prod-pincode button{background:#f9fafb;border:none;border-left:1px solid #e8e8e8;padding:0 20px;font-weight:700;font-size:12px;color:#e11d48;cursor:pointer}
+  
+  .accordion{border-top:1px solid #e8e8e8}
+  .accordion-item{border-bottom:1px solid #e8e8e8}
+  .accordion-btn{width:100%;display:flex;justify-content:space-between;align-items:center;padding:16px 0;background:none;border:none;font-size:14px;font-weight:600;color:#111;cursor:pointer}
+  .accordion-content{max-height:0;overflow:hidden;transition:max-height 0.3s ease;font-size:13px;line-height:1.6;color:#555}
+  .accordion-inner{padding-bottom:16px}
+  
+  .prod-sticky-footer{position:sticky;bottom:0;left:0;right:0;background:#fff;padding:12px 20px;border-top:1px solid #e8e8e8;display:flex;gap:12px;z-index:100;box-shadow:0 -2px 10px rgba(0,0,0,0.05)}
+  .prod-sticky-footer button{flex:1;border:none;border-radius:4px;height:48px;font-size:14px;font-weight:700;letter-spacing:1px;display:flex;align-items:center;justify-content:center;gap:8px;cursor:pointer}
+  .btn-add-cart{flex:1 !important;background:#fff;border:1px solid #111 !important;color:#111;transition:all 0.2s;font-size:12px;padding:0;}
+  .btn-buy-now{flex:4 !important;background:#fff;border:1px solid #111 !important;color:#111;}
+  .prod-wishlist-badge{position:absolute;top:16px;right:16px;width:36px;height:36px;background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,0.15);cursor:pointer;z-index:20;color:#111;transition:all 0.3s;}
+  .prod-wishlist-badge.active{color:#d93025;}
+  .prod-wishlist-badge.active svg{fill:#d93025;stroke:#d93025;}
+  .prod-urgency{font-size:12px;color:#d93025;font-weight:700;margin-top:8px;display:flex;align-items:center;gap:6px;animation:blink 2s infinite}
+  @keyframes blink { 0%, 100% {opacity:1} 50% {opacity:0.6} }
+
+  /* SMALL PHONES 320px+ */
+  @media(max-width:359px){
+    .announcement{font-size:9px;padding:6px 10px}
+    .header{padding:10px 12px}
+    .header-logo{font-size:20px}
+    .section-header{padding:0 12px 10px}
+    .section-title{font-size:11px;letter-spacing:1px}
+    .section-link{font-size:10px}
+    .categories-scroll,.products-scroll,.occasion-grid,.steals-grid{padding:0 12px;gap:8px}
+    .cat-img{width:64px;height:78px}
+    .cat-label{font-size:8px}
+    .product-card{width:140px}
+    .product-img{width:140px;height:178px}
+    .product-title{font-size:11px}
+    .product-price{font-size:12px}
+    .occasion-item{width:110px}
+    .occasion-img{width:110px;height:136px}
+    .occasion-label{font-size:9px}
+    .steal-item{width:125px}
+    .steal-img{width:125px;height:156px}
+    .banner-full{margin:8px 12px}
+    .banner-full img{height:140px}
+    .quick-banner{margin:4px 12px 8px;padding:10px 12px}
+    .quick-text{font-size:11px}
+    .quick-sub{font-size:9px}
+    .quick-badge{font-size:8px;padding:4px 8px}
+    .tag-row{padding:0 12px 10px;gap:5px}
+    .tag{font-size:9px;padding:5px 10px}
+    .trust-bar{padding:14px 12px;gap:8px}
+    .trust-icon{font-size:16px}
+    .trust-label{font-size:8px}
+    .trust-sub{font-size:7px}
+    .carousel-badge{font-size:10px;padding:6px 16px}
+    .carousel-dot{width:4px;height:4px}
+    .carousel-dot.active{width:12px}
+    .header-right{gap:8px}
+    .divider{height:6px}
+    .section{padding:16px 0}
+    .colors-row .color-dot{width:9px;height:9px}
+  }
+
+  /* LARGER PHONES 480px+ */
+  @media(min-width:480px){
+    .cat-img{width:80px;height:98px}
+    .cat-label{font-size:10px}
+    .product-card{width:170px}
+    .product-img{width:170px;height:216px}
+    .occasion-item{width:135px}
+    .occasion-img{width:135px;height:166px}
+    .steal-item{width:155px}
+    .steal-img{width:155px;height:194px}
+    .banner-full img{height:200px}
+    .section-title{font-size:12px}
+    .quick-banner{padding:14px 18px}
+  }
+
+  /* TABLET 600px+ */
+  @media(min-width:600px){
+    .cat-img{width:88px;height:108px}
+    .cat-label{font-size:10px}
+    .product-card{width:185px}
+    .product-img{width:185px;height:230px}
+    .occasion-item{width:142px}
+    .occasion-img{width:142px;height:178px}
+    .steal-item{width:165px}
+    .steal-img{width:165px;height:205px}
+    .banner-full img{height:230px}
+    .trust-label{font-size:10px}
+    .trust-sub{font-size:9px}
+    .header{padding:14px 24px}
+    .section-header{padding:0 24px 14px}
+    .categories-scroll,.products-scroll,.occasion-grid,.steals-grid{padding:0 24px;gap:14px}
+    .banner-full{margin:14px 24px}
+    .quick-banner{margin:6px 24px 12px}
+    .tag-row{padding:0 24px 14px}
+    .trust-bar{padding:20px 24px}
+    .announcement{font-size:12px;padding:8px 20px}
+  }
+
+  /* SMALL TABLET / LANDSCAPE PHONE 768px+ */
+  @media(min-width:768px){
+    .carousel-badge{font-size:13px;padding:9px 28px}
+    .header{padding:14px 32px}
+    .section{padding:28px 0}
+    .section-header{padding:0 32px 16px}
+    .section-title{font-size:13px;letter-spacing:1.5px}
+    .categories-scroll,.products-scroll,.occasion-grid,.steals-grid{padding:0 32px;gap:14px}
+
+    /* Switch to 2-column grid for products */
+    .products-scroll{overflow-x:visible;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .product-card{flex-shrink:unset;width:100%}
+    .product-img{width:100%;height:auto;aspect-ratio:4/5}
+
+    /* Categories as wrapping grid */
+    .categories-scroll{overflow-x:visible;display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+    .cat-item{flex-shrink:unset}
+    .cat-img{width:100%;height:auto;aspect-ratio:4/5}
+
+    /* Occasion grid */
+    .occasion-grid{overflow-x:visible;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .occasion-item{flex-shrink:unset;width:100%}
+    .occasion-img{width:100%;height:auto;aspect-ratio:4/5}
+
+    /* Steals grid */
+    .steals-grid{overflow-x:visible;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .steal-item{flex-shrink:unset;width:100%}
+    .steal-img{width:100%;height:auto;aspect-ratio:4/5}
+
+    .banner-full{margin:14px 32px}
+    .banner-full img{height:260px}
+    .quick-banner{margin:6px 32px 14px;padding:16px 24px}
+    .quick-text{font-size:13px}
+    .quick-sub{font-size:10px}
+    .tag-row{padding:0 32px 14px}
+    .tag{font-size:11px;padding:6px 14px}
+    .trust-bar{padding:22px 32px}
+    .product-title{font-size:13px}
+    .product-price{font-size:14px}
+  }
+
+  /* DESKTOP 1024px+ */
+  @media(min-width:1024px){
+    .search-side-menu{max-width:400px}
+    .drawer-search-box{padding:7px 12px}
+    .app{padding-bottom:0}
+    .carousel-slide{width:auto;height:65vh;max-height:600px;flex:none;margin:0 2px;cursor:grab}
+    .carousel-slide:active{cursor:grabbing}
+    .carousel-dots{display:none}
+    .header{padding:0.5rem 1.5rem;box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px -1px rgba(0,0,0,.1)}
+    .header-subnav{padding:8px 48px;gap:40px;justify-content:center}
+    .header-subnav a{font-size:13px}
+    .header-logo{font-size:30px}
+    .mobile-search-bar{display:none}
+    .header-search{display:flex;border:1.5px solid #999;padding:7px 12px;gap:8px;min-width:0;width:260px;cursor:text}
+    .header-search svg{width:15px;height:15px;stroke:#666;stroke-width:2px}
+    .header-search input{display:block}
+    .hide-on-mobile{display:flex !important}
+    .hide-on-desktop{display:none !important}
+    .carousel-badge{font-size:14px;padding:10px 32px}
+    .section{padding:36px 0}
+    .section-header{padding:0 48px 18px}
+    .section-title{font-size:14px;letter-spacing:2px}
+    .responsive-container{max-width:600px;padding:40px 0}
+    .checkout-sticky{bottom:0;border-radius:0 0 8px 8px}
+
+    /* PRODUCT PAGE DESKTOP */
+    .prod-layout{display:flex;gap:40px;padding:40px 48px;max-width:1200px;margin:0 auto}
+    .prod-left{flex:1;position:sticky;top:80px;align-self:start}
+    .prod-right{flex:1;max-width:480px;padding-top:20px}
+    .prod-header{display:none}
+    .prod-sticky-footer{position:static;padding:0;border:none;box-shadow:none;margin-top:32px;background:transparent}
+    .prod-gallery-btn{display:none}
+    .prod-gallery{display:grid;grid-template-columns:1fr 1fr;gap:16px;overflow:visible;scroll-snap-type:none}
+    .prod-slide{aspect-ratio:3/4}
+    .prod-dots{display:none}
+    .prod-info{padding:0}
+
+    .categories-scroll{padding:0 48px;overflow-x:visible;display:grid;grid-template-columns:repeat(9,1fr);gap:16px}
+    .cat-item{flex-shrink:unset}
+    .cat-img{width:100%;height:auto;aspect-ratio:4/5}
+
+    .products-scroll{padding:0 48px;overflow-x:visible;display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:20px}
+    .product-card{flex-shrink:unset;width:100%}
+    .product-img{width:100%;height:auto;aspect-ratio:4/5}
+
+    .occasion-grid{padding:0 48px;overflow-x:visible;display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+    .occasion-item{flex-shrink:unset;width:100%}
+    .occasion-img{width:100%;height:auto;aspect-ratio:4/5}
+
+    .steals-grid{padding:0 48px;overflow-x:visible;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .steal-item{flex-shrink:unset;width:100%}
+    .steal-img{width:100%;height:auto;aspect-ratio:4/5}
+
+    .banner-full{margin:16px 48px}
+    .banner-full img{height:300px}
+    .quick-banner{margin:6px 48px 16px;padding:18px 28px}
+    .quick-text{font-size:14px}
+    .quick-sub{font-size:11px}
+    .tag-row{padding:0 48px 16px}
+    .tag{font-size:11px;padding:7px 16px}
+    .trust-bar{padding:24px 48px}
+    .trust-icon{font-size:24px}
+    .trust-label{font-size:11px}
+    .trust-sub{font-size:10px}
+    .bottom-nav{display:none}
+    .product-title{font-size:13px}
+    .product-type{font-size:11px}
+    .product-price{font-size:14px}
+    .occasion-label{font-size:11px}
+  }
+
+  /* WIDE 1280px+ */
+  @media(min-width:1280px){
+    .products-scroll{grid-template-columns:repeat(auto-fill,minmax(215px,1fr))}
+    .header{padding:16px 56px}
+    .section-header{padding:0 56px 18px}
+    .categories-scroll,.products-scroll,.occasion-grid,.steals-grid{padding:0 56px}
+    .banner-full{margin:18px 56px}
+    .quick-banner{margin:8px 56px 18px}
+    .tag-row{padding:0 56px 18px}
+    .trust-bar{padding:28px 56px}
+  }
+
+  /* ULTRA-WIDE 1600px+ */
+  @media(min-width:1600px){
+    .carousel-badge{font-size:16px;padding:12px 36px}
+    .section{padding:44px 0}
+    .section-title{font-size:15px;letter-spacing:2.5px}
+    .products-scroll{grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:24px}
+    .occasion-grid{grid-template-columns:repeat(5,1fr);gap:20px}
+    .steals-grid{grid-template-columns:repeat(4,1fr);gap:20px}
+    .banner-full img{height:380px}
+    .trust-icon{font-size:28px}
+    .trust-label{font-size:12px}
+    .trust-sub{font-size:11px}
+  }
+
+
+
+  /* LANDSCAPE ORIENTATION PHONES */
+  @media(max-height:500px) and (orientation:landscape){
+    .announcement{padding:4px 12px;font-size:10px}
+    .header{padding:8px 16px}
+    .section{padding:16px 0}
+    .bottom-nav{height:52px}
+    .nav-label{font-size:7px}
+    .banner-full img{height:160px}
+    .trust-bar{padding:10px 16px}
+  }
+
+  @media(prefers-reduced-motion:reduce){
+    .carousel-track,.cat-img,.occasion-img,.steal-img,.product-img img,.banner-full img{transition:none}
+  }
+  .toast-notification{position:fixed;bottom:84px;left:50%;transform:translateX(-50%) translateY(150%);background:#fff;color:#111;padding:12px 24px;border-radius:8px;display:flex;align-items:center;gap:12px;box-shadow:0 10px 30px rgba(0,0,0,0.15);z-index:9999;width:auto;white-space:nowrap;transition:transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);border:1px solid #eee;opacity:0;}
+  .toast-notification.show{transform:translateX(-50%) translateY(0);opacity:1;}
+  .toast-icon{flex-shrink:0;background:rgba(22,163,74,0.15);border-radius:50%;padding:4px;color:#16a34a;display:flex;align-items:center;justify-content:center;}
+  .toast-title{font-size:14px;font-weight:700;color:#111;}
+</style>
+</head>
+<body>
+<div class="app">
+
+  <div class="announcement" id="topAnnouncement">
+    NEW ARRIVALS &nbsp;&middot;&nbsp; FLAT 20% OFF FIRST ORDER
+    <button type="button" class="announcement-close" onclick="document.getElementById('topAnnouncement').style.display='none'; return false;" aria-label="Close">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+  </div>
+
+  <div class="header-wrap">
+    <header class="header">
+      <div class="header-left">
+        <button id="hamburgerBtn" class="header-icon-btn" aria-label="Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.2">
+            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+      <div class="header-center">
+        <img class="header-logo" src="images/logo.png" alt="Take & Wear" />
+      </div>
+      <div class="header-right">
+        <a href="#" class="header-search" onclick="toggleSearchMenu(); return false;" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21"/></svg>
+          <input type="text" placeholder='Search "Formal Shirts"' aria-label="Search" readonly style="cursor:text; pointer-events:none;" />
+        </a>
+        <button class="header-icon-btn" aria-label="Wishlist" onclick="switchTab('wishlist'); return false;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5">
+            <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+          </svg>
+        </button>
+        <button class="header-icon-btn hide-on-mobile" aria-label="Profile" onclick="switchTab('profile'); return false;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5"><circle cx="12" cy="8" r="4.5"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        </button>
+        <button class="header-icon-btn hide-on-mobile" aria-label="Cart" onclick="switchTab('cart'); return false;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <div class="cart-badge" style="position:absolute; top:-4px; right:-8px; background:#e11d48; color:#fff; font-size:10px; font-weight:800; min-width:16px; height:16px; border-radius:8px; display:none; align-items:center; justify-content:center; padding:0 4px; border:1.5px solid #fff;">0</div>
+        </button>
+      </div>
+    </header>
+    <nav class="header-subnav">
+      <a href="#" class="active">Discover</a>
+      <a href="#">New Arrivals</a>
+      <a href="#">Best-Sellers</a>
+      <a href="#">Shirts</a>
+      <a href="#">Jeans</a>
+      <a href="#">Kids</a>
+    </nav>
+  </div>
+
+  <div id="view-home" style="display:block;">
+  <div class="carousel" id="carousel">
+    <div class="carousel-track" id="carouselTrack">
+      <div class="carousel-slide"><img src="https://d2d5n4ft74bagm.cloudfront.net/media/banners/fdff2e6f-cba1-428e-b386-96b5f5f2209d/1781267682.jpeg" alt="Take & Wear X" onerror="this.style.display='none';this.parentElement.style.background='#1a1a1a'"/><div class="carousel-badge">Take & Wear X</div></div>
+      <div class="carousel-slide"><img src="https://d2d5n4ft74bagm.cloudfront.net/media/banners/44c3d24d-c70d-4210-a581-108af602e0e8/1781006299.jpeg" alt="LINEN EDIT" onerror="this.style.display='none';this.parentElement.style.background='#c8b89a'"/><div class="carousel-badge">LINEN EDIT</div></div>
+      <div class="carousel-slide"><img src="https://d2d5n4ft74bagm.cloudfront.net/media/banners/07b336dd-ed17-4b62-84c9-c18dc84265b3/1780900372.jpeg" alt="SUMMER SHIRTS" onerror="this.style.display='none';this.parentElement.style.background='#e8d5c0'"/><div class="carousel-badge">SUMMER SHIRTS</div></div>
+      <div class="carousel-slide"><img src="https://d2d5n4ft74bagm.cloudfront.net/media/banners/d5c6634e-f6a2-45ee-a0e6-1ea587af7fe5/1780551455.jpeg" alt="Bestsellers" onerror="this.style.display='none';this.parentElement.style.background='#222'"/><div class="carousel-badge">BESTSELLERS</div></div>
+      <div class="carousel-slide"><img src="https://d2d5n4ft74bagm.cloudfront.net/media/banners/921447e5-1827-412b-b56d-a31e69d714a2/1780405487.jpeg" alt="Father's Day Edit" onerror="this.style.display='none';this.parentElement.style.background='#2c3e50'"/><div class="carousel-badge">FATHER'S DAY EDIT</div></div>
+      <div class="carousel-slide"><img src="https://d2d5n4ft74bagm.cloudfront.net/media/banners/1704323f-be05-49d1-abdf-2b9d4b380892/1780900330.jpeg" alt="TROUSERS" onerror="this.style.display='none';this.parentElement.style.background='#3a3a3a'"/><div class="carousel-badge">TROUSERS</div></div>
+      <div class="carousel-slide"><img src="https://d2d5n4ft74bagm.cloudfront.net/media/banners/3d463ad4-226d-44de-ad78-b8f92d5c2206/1781158057.jpeg" alt="PERFUMES" onerror="this.style.display='none';this.parentElement.style.background='#8b6f8b'"/><div class="carousel-badge">PERFUMES</div></div>
+    </div>
+    <div class="carousel-dots" id="carouselDots"></div>
+  </div>
+
+  <div class="divider"></div>
+
+  <section class="section">
+    <div class="section-header"><span class="section-title">Shop by Category</span></div>
+    <div class="categories-scroll">
+      <div class="cat-item" onclick="openProductPage(this); return false;"><div class="cat-img"><img src="https://images.unsplash.com/photo-1596755094514-f87e32f85e23?auto=format&fit=crop&w=200&q=80" alt="Casual Shirts" onerror="this.parentElement.style.background='#ddd'"/></div><div class="cat-label">Casual</div></div>
+      <div class="cat-item" onclick="openProductPage(this); return false;"><div class="cat-img"><img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=200&q=80" alt="Formal Shirts" onerror="this.parentElement.style.background='#ddd'"/></div><div class="cat-label">Formal</div></div>
+      <div class="cat-item" onclick="openProductPage(this); return false;"><div class="cat-img"><img src="https://images.unsplash.com/photo-1598032895397-b9472444bf93?auto=format&fit=crop&w=200&q=80" alt="Printed Shirts" onerror="this.parentElement.style.background='#ddd'"/></div><div class="cat-label">Printed</div></div>
+      <div class="cat-item" onclick="openProductPage(this); return false;"><div class="cat-img"><img src="https://images.unsplash.com/photo-1604644401890-0bd678c83788?auto=format&fit=crop&w=200&q=80" alt="Checked Shirts" onerror="this.parentElement.style.background='#ddd'"/></div><div class="cat-label">Checked</div></div>
+      <div class="cat-item" onclick="openProductPage(this); return false;"><div class="cat-img"><img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=200&q=80" alt="Slim Jeans" onerror="this.parentElement.style.background='#ddd'"/></div><div class="cat-label">Slim Jeans</div></div>
+      <div class="cat-item" onclick="openProductPage(this); return false;"><div class="cat-img"><img src="https://images.unsplash.com/photo-1602293589930-45aad59ba3ab?auto=format&fit=crop&w=200&q=80" alt="Loose Jeans" onerror="this.parentElement.style.background='#ddd'"/></div><div class="cat-label">Loose Jeans</div></div>
+      <div class="cat-item" onclick="openProductPage(this); return false;"><div class="cat-img"><img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=200&q=80" alt="Boys" onerror="this.parentElement.style.background='#ddd'"/></div><div class="cat-label">Boys</div></div>
+      <div class="cat-item" onclick="openProductPage(this); return false;"><div class="cat-img"><img src="https://images.unsplash.com/photo-1514090458221-65bb69cf63e6?auto=format&fit=crop&w=200&q=80" alt="Girls" onerror="this.parentElement.style.background='#ddd'"/></div><div class="cat-label">Girls</div></div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section">
+    <div class="section-header"><span class="section-title">New &amp; Popular</span><a href="#" class="section-link">View All</a></div>
+    <div class="tag-row">
+      <div class="tag active">All</div><div class="tag">Shirts</div><div class="tag">Jeans</div><div class="tag">Kids</div>
+    </div>
+    <div class="products-scroll">
+      <div class="product-card" onclick="openProductPage(this); return false;"><div class="product-img"><img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/1_1b6df804-56b1-4abd-bd4b-44bce1ea6cc6.jpg?v=1779819959" alt="Cotton Shirt" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjwvc3ZnPg=='"/><div class="wishlist-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div></div><div class="product-info"><div class="product-title">100% Cotton Regular Fit Shirt</div><div class="product-type">Shirts</div><div class="product-price">&#8377;1,099</div><div class="product-rating"><span style="color:#f59e0b;font-size:10px">&#9733;</span><span style="font-size:10px;font-weight:600">4.5</span><span class="rating-count">(27)</span></div><div class="colors-row"><div class="color-dot" style="background:#e8a4b8"></div><div class="color-dot" style="background:#2c4a8f"></div><div class="color-dot" style="background:#f0e040"></div><div class="color-dot" style="background:#fff;border-color:#ccc"></div><span style="font-size:9px;color:#888;margin-left:2px">+2</span></div></div></div>
+      <div class="product-card" onclick="openProductPage(this); return false;"><div class="product-img"><img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/1_f82fe4db-e2a2-4339-b518-237748c9bc51.jpg?v=1779298233" alt="Cotton Shirt Navy" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjwvc3ZnPg=='"/><div class="wishlist-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div></div><div class="product-info"><div class="product-title">100% Cotton Regular Fit Shirt</div><div class="product-type">Shirts</div><div class="product-price">&#8377;1,099</div><div class="product-rating"><span style="color:#f59e0b;font-size:10px">&#9733;</span><span style="font-size:10px;font-weight:600">4.3</span><span class="rating-count">(18)</span></div><div class="colors-row"><div class="color-dot" style="background:#4169e1"></div><div class="color-dot" style="background:#1c2951"></div><div class="color-dot" style="background:#e8a4b8"></div><div class="color-dot" style="background:#fff;border-color:#ccc"></div></div></div></div>
+      <div class="product-card" onclick="openProductPage(this); return false;"><div class="product-img"><img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/1_77bafd80-933d-40c4-8276-3c2162235824.jpg?v=1779820006" alt="Baggy Trousers" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjwvc3ZnPg=='"/><div class="product-badge">NEW</div><div class="wishlist-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div></div><div class="product-info"><div class="product-title">Baggy Stretch Pleated Trousers</div><div class="product-type">Trousers</div><div class="product-price">&#8377;1,999</div><div class="product-rating"><span style="color:#f59e0b;font-size:10px">&#9733;</span><span style="font-size:10px;font-weight:600">4.1</span><span class="rating-count">(7)</span></div><div class="colors-row"><div class="color-dot" style="background:#1c2951"></div><div class="color-dot" style="background:#aaa"></div><div class="color-dot" style="background:#6b4226"></div></div></div></div>
+      <div class="product-card" onclick="openProductPage(this); return false;"><div class="product-img"><img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/1_f37c00fa-bb72-45f4-ab2c-5459727b2cc7.jpg?v=1780502245" alt="Bootcut Jeans" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjwvc3ZnPg=='"/><div class="product-badge">NEW</div><div class="wishlist-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div></div><div class="product-info"><div class="product-title">Bootcut Stretch Washed Jeans</div><div class="product-type">Jeans</div><div class="product-price">&#8377;2,099</div><div class="product-rating"><span style="color:#f59e0b;font-size:10px">&#9733;</span><span style="font-size:10px;font-weight:600">4.6</span><span class="rating-count">(9)</span></div><div class="colors-row"><div class="color-dot" style="background:#4169e1"></div></div></div></div>
+      <div class="product-card" onclick="openProductPage(this); return false;"><div class="product-img"><img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/1_51c8463f-5a77-4e54-a8dd-377f46a02bd9.jpg?v=1780837452" alt="Linen Stripe Shirt" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjwvc3ZnPg=='"/><div class="product-badge">LINEN</div><div class="wishlist-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div></div><div class="product-info"><div class="product-title">Cotton Linen Stripes Shirt</div><div class="product-type">Shirts</div><div class="product-price">&#8377;1,799</div><div class="product-rating"><span style="color:#f59e0b;font-size:10px">&#9733;</span><span style="font-size:10px;font-weight:600">4.2</span><span class="rating-count">(9)</span></div><div class="colors-row"><div class="color-dot" style="background:#9b59b6"></div><div class="color-dot" style="background:#f0e040"></div><div class="color-dot" style="background:#e8a4b8"></div><div class="color-dot" style="background:#fff;border-color:#ccc"></div></div></div></div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section">
+    <div class="section-header"><span class="section-title">Match the Mood</span><a href="#" class="section-link">See All</a></div>
+    <div class="occasion-grid">
+      <div class="occasion-item" onclick="openProductPage(this); return false;"><div class="occasion-img"><img src="https://d2d5n4ft74bagm.cloudfront.net/media/shop-by-occasion/ba22567c-9f27-44a2-ba3e-af01075017a4/1780900990.jpeg" alt="Holiday Energy" onerror="this.parentElement.style.background='#e8d5c0'"/></div><div class="occasion-label">Holiday Energy</div></div>
+      <div class="occasion-item" onclick="openProductPage(this); return false;"><div class="occasion-img"><img src="https://d2d5n4ft74bagm.cloudfront.net/media/shop-by-occasion/0875e990-1323-472d-8039-34d70f049000/1781000334.jpeg" alt="Summer Escape" onerror="this.parentElement.style.background='#d0e8f0'"/></div><div class="occasion-label">Summer Escape</div></div>
+      <div class="occasion-item" onclick="openProductPage(this); return false;"><div class="occasion-img"><img src="https://d2d5n4ft74bagm.cloudfront.net/media/shop-by-occasion/85c52675-d3ab-4a07-822e-127ab173e314/1780918798.jpeg" alt="Formal Wear" onerror="this.parentElement.style.background='#1c2951'"/></div><div class="occasion-label">Formal Wear</div></div>
+      <div class="occasion-item" onclick="openProductPage(this); return false;"><div class="occasion-img"><img src="https://d2d5n4ft74bagm.cloudfront.net/media/shop-by-occasion/a7853194-36c9-47fa-a4f2-6699f538f742/1780918748.jpeg" alt="Core Lab" onerror="this.parentElement.style.background='#2c2c2c'"/></div><div class="occasion-label">Core Lab</div></div>
+      <div class="occasion-item" onclick="openProductPage(this); return false;"><div class="occasion-img"><img src="https://d2d5n4ft74bagm.cloudfront.net/media/shop-by-occasion/608a3095-c66a-492d-9338-40ff7af120be/1780901105.jpeg" alt="Take & Wear Luxe" onerror="this.parentElement.style.background='#4a3728'"/></div><div class="occasion-label">Take & Wear Luxe</div></div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <div class="banner-full" onclick="openProductPage(this); return false;">
+    <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/FC_LAST_CHANE.jpg?v=1780993257" alt="Shop Your Size" onerror="this.style.display='none';this.parentElement.style.background='#222';this.parentElement.style.height='150px'"/>
+  </div>
+
+  <div class="quick-banner">
+    <div><div class="quick-text">&#9889; Get it in 60 minutes</div><div class="quick-sub">Available in select cities &middot; &#8377;29 for X members</div></div>
+    <div class="quick-badge">QUICK COM</div>
+  </div>
+
+  <div class="divider"></div>
+
+
+  <div class="divider"></div>
+
+  <section class="section">
+    <div class="section-header"><span class="section-title">Trending Now</span><a href="#" class="section-link">View All</a></div>
+    <div class="products-scroll">
+      <div class="product-card" onclick="openProductPage(this); return false;"><div class="product-img"><img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4pl003-01_1.jpg?v=1779725302" alt="Polo T-Shirt" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjwvc3ZnPg=='"/><div class="wishlist-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div></div><div class="product-info"><div class="product-title">Slim Fit 100% Cotton Polo</div><div class="product-type">T-Shirts</div><div class="product-price">&#8377;1,199</div><div class="product-rating"><span style="color:#f59e0b;font-size:10px">&#9733;</span><span style="font-size:10px;font-weight:600">4.4</span><span class="rating-count">(7)</span></div><div class="colors-row"><div class="color-dot" style="background:#4169e1"></div><div class="color-dot" style="background:#6b4226"></div><div class="color-dot" style="background:#228b22"></div><div class="color-dot" style="background:#ffcba4"></div></div></div></div>
+      <div class="product-card" onclick="openProductPage(this); return false;"><div class="product-img"><img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/1_b60155f6-7eaa-4f4d-b0c3-a0a76ac42a44.jpg?v=1781025676" alt="Balloon Jeans" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjwvc3ZnPg=='"/><div class="product-badge">NEW</div><div class="wishlist-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div></div><div class="product-info"><div class="product-title">Washed Balloon Fit Jeans</div><div class="product-type">Jeans</div><div class="product-price">&#8377;1,999</div><div class="product-rating"><span style="color:#f59e0b;font-size:10px">&#9733;</span><span style="font-size:10px;font-weight:600">4.2</span><span class="rating-count">(9)</span></div><div class="colors-row"><div class="color-dot" style="background:#aaa"></div><div class="color-dot" style="background:#4169e1"></div></div></div></div>
+      <div class="product-card" onclick="openProductPage(this); return false;"><div class="product-img"><img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/1_6f93db53-ebbc-40ed-9f16-a276e967be68.jpg?v=1778519873" alt="Mandarin Shirt" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjwvc3ZnPg=='"/><div class="product-badge">LINEN</div><div class="wishlist-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div></div><div class="product-info"><div class="product-title">Cotton Linen Mandarin Shirt</div><div class="product-type">Shirts</div><div class="product-price">&#8377;1,499</div><div class="product-rating"><span style="color:#f59e0b;font-size:10px">&#9733;</span><span style="font-size:10px;font-weight:600">4.6</span><span class="rating-count">(9)</span></div><div class="colors-row"><div class="color-dot" style="background:#4169e1"></div><div class="color-dot" style="background:#6b4226"></div><div class="color-dot" style="background:#556b2f"></div><div class="color-dot" style="background:#fff;border-color:#ccc"></div></div></div></div>
+      <div class="product-card" onclick="openProductPage(this); return false;"><div class="product-img"><img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/1_fd89715f-06b3-4b57-a5b2-5fba98e63417.jpg?v=1779985922" alt="Linen Chinos" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjwvc3ZnPg=='"/><div class="product-badge">LINEN</div><div class="wishlist-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div></div><div class="product-info"><div class="product-title">Linen Blend Relaxed Fit Chinos</div><div class="product-type">Trousers</div><div class="product-price">&#8377;1,699</div><div class="product-rating"><span style="color:#f59e0b;font-size:10px">&#9733;</span><span style="font-size:10px;font-weight:600">4.2</span><span class="rating-count">(8)</span></div><div class="colors-row"><div class="color-dot" style="background:#6b4226"></div><div class="color-dot" style="background:#556b2f"></div><div class="color-dot" style="background:#f5f5dc"></div><div class="color-dot" style="background:#111"></div></div></div></div>
+    </div>
+  </section>
+
+  <div class="trust-bar">
+    <div class="trust-item"><div class="trust-icon">&#128666;</div><div class="trust-label">FREE DELIVERY</div><div class="trust-sub">above &#8377;599</div></div>
+    <div class="trust-item"><div class="trust-icon">&#10548;</div><div class="trust-label">EASY RETURNS</div><div class="trust-sub">7 day policy</div></div>
+    <div class="trust-item"><div class="trust-icon">&#128274;</div><div class="trust-label">SECURE PAYMENT</div><div class="trust-sub">100% safe</div></div>
+    <div class="trust-item"><div class="trust-icon">&#9889;</div><div class="trust-label">60-MIN DELIVERY</div><div class="trust-sub">select cities</div></div>
+  </div>
+  </div>
+
+  <div id="view-offers" style="display:none; padding-bottom: 80px;">
+    <div class="announcement" style="background:#e11d48; color:#fff;">FLASH SALE - UP TO 70% OFF</div>
+    <div class="divider"></div>
+    <section class="section">
+      <div class="section-header" style="justify-content:center"><span class="section-title">Steals of the Day</span></div>
+      <div class="steals-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; padding: 0 16px;">
+        <div class="steal-item" style="width:100%" onclick="openProductPage(this); return false;"><div class="steal-img" style="width:100%; height:auto; aspect-ratio:4/5;"><img src="https://d2d5n4ft74bagm.cloudfront.net/media/shop-by-price/877de8b8-0903-4514-bebb-203c6d4a825c/1780993431.jpeg" alt="Shirts on Sale" onerror="this.parentElement.style.background='#ddd'"/><div style="position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,.5);color:#fff;font-size:10px;font-weight:700;letter-spacing:1px;padding:8px;text-align:center">SHIRTS ON SALE</div></div></div>
+        <div class="steal-item" style="width:100%" onclick="openProductPage(this); return false;"><div class="steal-img" style="width:100%; height:auto; aspect-ratio:4/5;"><img src="https://d2d5n4ft74bagm.cloudfront.net/media/shop-by-price/a8bf6b6b-90c1-4422-ba30-42c598e9b6ed/1780993453.jpeg" alt="XL XXL Sale" onerror="this.parentElement.style.background='#ddd'"/><div style="position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,.5);color:#fff;font-size:10px;font-weight:700;letter-spacing:1px;padding:8px;text-align:center">XL XXL SALE</div></div></div>
+        <div class="steal-item" style="width:100%" onclick="openProductPage(this); return false;"><div class="steal-img" style="width:100%; height:auto; aspect-ratio:4/5;"><img src="https://d2d5n4ft74bagm.cloudfront.net/media/shop-by-price/67a635f9-95fe-4eb5-a35f-7c12a61d6d9e/1780993405.jpeg" alt="Cargo Pants" onerror="this.parentElement.style.background='#ddd'"/><div style="position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,.5);color:#fff;font-size:10px;font-weight:700;letter-spacing:1px;padding:8px;text-align:center">CARGO PANTS</div></div></div>
+        <div class="steal-item" style="width:100%" onclick="openProductPage(this); return false;"><div class="steal-img" style="width:100%; height:auto; aspect-ratio:4/5;"><img src="https://d2d5n4ft74bagm.cloudfront.net/media/shop-by-price/b5d2f55c-1832-4f8d-aebc-087ff1ef89d0/1780993485.jpeg" alt="Price Drop" onerror="this.parentElement.style.background='#ddd'"/><div style="position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,.5);color:#fff;font-size:10px;font-weight:700;letter-spacing:1px;padding:8px;text-align:center">PRICE DROP</div></div></div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+    <section class="section">
+      <div class="section-header" style="justify-content:center"><span class="section-title">Shop by Price</span></div>
+      <div class="price-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; padding: 0 16px;">
+        <div class="price-bubble" style="background:#f9fafb; border:1px solid #e8e8e8; padding: 20px 0; text-align: center; border-radius: 8px; cursor: pointer;">
+          <div style="font-size:12px; color:#888;">UNDER</div>
+          <div style="font-size:24px; font-weight:800; color:#e11d48;">&#8377;999</div>
+        </div>
+        <div class="price-bubble" style="background:#f9fafb; border:1px solid #e8e8e8; padding: 20px 0; text-align: center; border-radius: 8px; cursor: pointer;">
+          <div style="font-size:12px; color:#888;">UNDER</div>
+          <div style="font-size:24px; font-weight:800; color:#e11d48;">&#8377;899</div>
+        </div>
+        <div class="price-bubble" style="background:#f9fafb; border:1px solid #e8e8e8; padding: 20px 0; text-align: center; border-radius: 8px; cursor: pointer;">
+          <div style="font-size:12px; color:#888;">UNDER</div>
+          <div style="font-size:24px; font-weight:800; color:#e11d48;">&#8377;799</div>
+        </div>
+        <div class="price-bubble" style="background:#f9fafb; border:1px solid #e8e8e8; padding: 20px 0; text-align: center; border-radius: 8px; cursor: pointer;">
+          <div style="font-size:12px; color:#888;">UNDER</div>
+          <div style="font-size:24px; font-weight:800; color:#e11d48;">&#8377;699</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+    <section class="section">
+      <div class="section-header" style="justify-content:center"><span class="section-title">Clearance Sale</span></div>
+      <div class="banner-full" style="padding: 0 16px;" onclick="openProductPage(this); return false;">
+        <img src="https://images.unsplash.com/photo-1555529733-0e670560f8e1?auto=format&fit=crop&w=600&q=80" alt="Clearance" style="width:100%; border-radius:8px;" onerror="this.parentElement.style.background='#ddd'"/>
+        <div style="text-align:center; padding:12px 0;">
+          <div style="font-weight:700; font-size:16px;">Last Chance to Buy</div>
+          <div style="color:#888; font-size:12px;">Grab them before they're gone</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="view-cart" style="display:none; padding-bottom: 80px; min-height: 100vh; background:#f9fafb;">
+    <div class="responsive-container">
+      <div id="cartItemsContainer">
+        <!-- JS will inject items here -->
+      </div>
+      
+      <div id="cartEmptyState" style="display:none; text-align:center; padding:64px 20px; min-height: calc(100vh - 160px);">
+        <div style="margin: auto 0;">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.5" style="margin:0 auto 16px; display:block;"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <div style="font-size:18px; font-weight:700; color:#111; margin-bottom:8px;">Your bag is empty</div>
+          <div style="font-size:14px; color:#888; margin-bottom:24px;">Looks like you haven't made your choice yet.</div>
+          <button style="background:#111; color:#fff; border:none; padding:12px 24px; border-radius:4px; font-weight:700; cursor:pointer;" onclick="switchTab('home')">CONTINUE SHOPPING</button>
+        </div>
+      </div>
+
+      <div id="cartDetailsContainer">
+        <div style="background:#fff; padding:16px; margin-bottom:12px; display:flex; gap:12px; align-items:center;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+          <input type="text" placeholder="Apply Promo Code" style="flex:1; border:none; border-bottom:1px solid #ccc; padding:8px 0; outline:none; font-size:14px;"/>
+          <button style="background:none; border:none; color:#e11d48; font-weight:700; cursor:pointer;">APPLY</button>
+        </div>
+
+        <div style="background:#fff; padding:16px; margin-bottom:12px;">
+          <div style="font-weight:700; font-size:15px; margin-bottom:16px;">Price Details</div>
+          <div style="display:flex; justify-content:space-between; margin-bottom:12px; font-size:13px; color:#555;">
+            <span>Total MRP</span><span id="cartTotalMrp">&#8377;0</span>
+          </div>
+          <div style="display:flex; justify-content:space-between; margin-bottom:12px; font-size:13px; color:#16a34a;">
+            <span>Discount on MRP</span><span>-&#8377;0</span>
+          </div>
+          <div style="display:flex; justify-content:space-between; margin-bottom:12px; font-size:13px; color:#555;">
+            <span>Shipping Fee</span><span style="color:#16a34a;">FREE</span>
+          </div>
+          <div style="border-top:1px dashed #e8e8e8; margin:16px 0;"></div>
+          <div style="display:flex; justify-content:space-between; font-size:16px; font-weight:700;">
+            <span>Total Amount</span><span id="cartTotalAmount">&#8377;0</span>
+          </div>
+        </div>
+        
+        <div class="checkout-sticky">
+          <button onclick="openCheckoutPageFromCart()" style="width:100%; background:#000; color:#fff; border:none; padding:16px; font-size:15px; font-weight:700; letter-spacing:1px; border-radius:4px; cursor:pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">PROCEED TO CHECKOUT</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="view-profile" style="display:none; padding-bottom: 80px; min-height: 100vh; background:#f9fafb;">
+    <div class="responsive-container">
+      <div style="background:#fff; padding:24px 20px; display:flex; align-items:center; gap:16px; border-bottom:1px solid #e8e8e8; margin-bottom:12px;">
+        <div style="width:64px; height:64px; background:#fff; color:#111; border: 1px solid #111; display:flex; align-items:center; justify-content:center; border-radius:50%;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4.5"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        </div>
+        <div>
+          <div style="font-size:18px; font-weight:700; margin-bottom:4px;">M Sharma</div>
+          <div style="font-size:13px; color:#888;">john.doe@example.com</div>
+          <div style="font-size:13px; color:#888;">+91 9876543210</div>
+        </div>
+      </div>
+
+      <div style="background:#fff; padding:16px 20px; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #e8e8e8; margin-bottom:12px;">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+          <span style="font-weight:600;">T&amp;W Rewards</span>
+        </div>
+        <div style="font-weight:700; font-size:18px; color:#f59e0b;">450 Pts</div>
+      </div>
+
+      <div style="background:#fff; border-top:1px solid #e8e8e8; border-bottom:1px solid #e8e8e8; margin-bottom:24px;">
+        <a href="#" style="display:flex; justify-content:space-between; align-items:center; padding:16px 20px; border-bottom:1px solid #e8e8e8; text-decoration:none; color:#333; font-weight:500;">
+          <span style="display:flex; align-items:center; gap:12px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+            My Orders
+          </span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <a href="#" style="display:flex; justify-content:space-between; align-items:center; padding:16px 20px; border-bottom:1px solid #e8e8e8; text-decoration:none; color:#333; font-weight:500;">
+          <span style="display:flex; align-items:center; gap:12px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            Wishlist
+          </span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <a href="#" style="display:flex; justify-content:space-between; align-items:center; padding:16px 20px; border-bottom:1px solid #e8e8e8; text-decoration:none; color:#333; font-weight:500;">
+          <span style="display:flex; align-items:center; gap:12px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Saved Addresses
+          </span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <a href="#" style="display:flex; justify-content:space-between; align-items:center; padding:16px 20px; text-decoration:none; color:#333; font-weight:500;">
+          <span style="display:flex; align-items:center; gap:12px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            Settings
+          </span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+      </div>
+
+      <div style="padding:0 20px;">
+        <button style="width:100%; background:#fff; color:#e11d48; border:1px solid #e8e8e8; padding:14px; font-size:15px; font-weight:700; border-radius:4px; cursor:pointer;">LOG OUT</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="view-wishlist" style="display:none; padding-bottom: 80px; min-height: 100vh; background:#f9fafb;">
+    <div class="responsive-container">
+      <div style="background:#fff; padding:24px 20px; border-bottom:1px solid #e8e8e8; margin-bottom:12px;">
+        <div style="font-size:18px; font-weight:700; margin-bottom:4px;">My Wishlist</div>
+        <div style="font-size:13px; color:#888;">2 Items saved</div>
+      </div>
+      
+      <div style="background:#fff; padding:16px; margin-bottom:12px;">
+        <div style="display:flex; gap:16px; margin-bottom:16px; padding-bottom:16px; border-bottom:1px solid #e8e8e8;">
+          <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/1_b60155f6-7eaa-4f4d-b0c3-a0a76ac42a44.jpg?v=1781025676" style="width:80px; height:100px; object-fit:cover; border-radius:4px;" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjwvc3ZnPg=='"/>
+          <div style="flex:1;">
+            <div style="font-weight:600; font-size:14px; margin-bottom:4px;">Washed Balloon Fit Jeans</div>
+            <div style="color:#888; font-size:12px; margin-bottom:8px;">Blue</div>
+            <div style="font-weight:700; font-size:15px; margin-bottom:12px;">&#8377;1,999</div>
+            <button style="border:1px solid #e8e8e8; background:#fff; padding:6px 12px; font-size:13px; font-weight:600; border-radius:4px; cursor:pointer;">MOVE TO CART</button>
+          </div>
+        </div>
+        
+        <div style="display:flex; gap:16px;">
+          <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/1_1b6df804-56b1-4abd-bd4b-44bce1ea6cc6.jpg?v=1779819959" style="width:80px; height:100px; object-fit:cover; border-radius:4px;" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjwvc3ZnPg=='"/>
+          <div style="flex:1;">
+            <div style="font-weight:600; font-size:14px; margin-bottom:4px;">100% Cotton Regular Fit Shirt</div>
+            <div style="color:#888; font-size:12px; margin-bottom:8px;">Navy</div>
+            <div style="font-weight:700; font-size:15px; margin-bottom:12px;">&#8377;1,099</div>
+            <button style="border:1px solid #e8e8e8; background:#fff; padding:6px 12px; font-size:13px; font-weight:600; border-radius:4px; cursor:pointer;">MOVE TO CART</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="view-product" style="display:block; padding-bottom: 0; min-height: 100vh; background:#fff; z-index: 2000; position: fixed; top:0; left:0; width:100%; height:100vh; overflow-y:auto; transform: translateX(100%); transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);">
+    <div class="prod-header">
+      <button onclick="closeProductPage(); return false;" class="header-icon-btn" aria-label="Back">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+      </button>
+      <div style="font-weight:700; font-size:14px; letter-spacing:1px;">Take & Wear</div>
+      <div style="display:flex; gap:16px;">
+        <button class="header-icon-btn" aria-label="Share">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="prod-layout">
+      <div class="prod-left">
+        <div class="prod-gallery-wrap">
+          <div class="prod-wishlist-badge" aria-label="Add to wishlist" onclick="this.classList.toggle('active')">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <button class="prod-gallery-btn prod-gallery-prev" onclick="scrollProdGallery(-1)" aria-label="Previous image">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          <button class="prod-gallery-btn prod-gallery-next" onclick="scrollProdGallery(1)" aria-label="Next image">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+          <div class="prod-gallery" id="prodGallery">
+            <div class="prod-slide"><img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/1_1b6df804-56b1-4abd-bd4b-44bce1ea6cc6.jpg?v=1779819959" id="prodMainImg1" alt="Product Image 1"/></div>
+            <div class="prod-slide"><img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/2_1b6df804-56b1-4abd-bd4b-44bce1ea6cc6.jpg?v=1779819959" id="prodMainImg2" alt="Product Image 2" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjwvc3ZnPg=='"/></div>
+            <div class="prod-slide"><img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/3_1b6df804-56b1-4abd-bd4b-44bce1ea6cc6.jpg?v=1779819959" id="prodMainImg3" alt="Product Image 3" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjwvc3ZnPg=='"/></div>
+          </div>
+        </div>
+        <div class="prod-dots" id="prodGalleryDots">
+          <button class="prod-dot active" onclick="document.getElementById('prodGallery').scrollTo({left:0, behavior:'smooth'})" aria-label="Image 1"></button>
+          <button class="prod-dot" onclick="document.getElementById('prodGallery').scrollTo({left:document.getElementById('prodGallery').clientWidth, behavior:'smooth'})" aria-label="Image 2"></button>
+          <button class="prod-dot" onclick="document.getElementById('prodGallery').scrollTo({left:document.getElementById('prodGallery').clientWidth*2, behavior:'smooth'})" aria-label="Image 3"></button>
+        </div>
+      </div>
+
+      <div class="prod-right">
+        <div class="prod-info">
+          <div class="prod-brand">Take &amp; Wear Exclusive</div>
+          <div class="prod-title" id="prodTitleText">100% Cotton Regular Fit Shirt</div>
+          <div class="prod-price-row">
+            <span class="prod-price" id="prodPriceText">&#8377;1,099</span>
+            <span class="prod-mrp">&#8377;2,199</span>
+            <span class="prod-discount">50% OFF</span>
+          </div>
+          <div class="prod-urgency">
+            🔥 HIGH DEMAND: Only 2 left in stock!
+          </div>
+          <div style="display:flex; align-items:center; gap:6px; margin-bottom:16px; margin-top:16px;">
+            <div style="background:#fff7ed; color:#f59e0b; font-size:11px; font-weight:700; padding:4px 8px; border-radius:4px; display:flex; align-items:center; gap:4px;">
+              <span>&#9733; 4.5</span>
+            </div>
+            <span style="font-size:12px; color:#888; text-decoration:underline; cursor:pointer;">Read 27 Reviews</span>
+          </div>
+
+          <div class="divider" style="margin: 0 -20px 24px; height:4px; background:#f9fafb;"></div>
+
+          <div class="prod-section-title">Color: <span style="color:#666; font-weight:500; margin-left:4px;" id="selectedColorName">Navy Blue</span></div>
+          <div class="prod-colors">
+            <button class="prod-color-btn active" onclick="selectColor(this, 'Navy Blue')"><div class="prod-color-inner" style="background:#1c2951"></div></button>
+            <button class="prod-color-btn" onclick="selectColor(this, 'Olive Green')"><div class="prod-color-inner" style="background:#556b2f"></div></button>
+            <button class="prod-color-btn" onclick="selectColor(this, 'Burgundy')"><div class="prod-color-inner" style="background:#800020"></div></button>
+          </div>
+
+          <div class="prod-section-title">
+            Select Size
+            <span style="font-size:11px; font-weight:600; color:#e11d48; text-decoration:underline; cursor:pointer; text-transform:uppercase;">Size Guide</span>
+          </div>
+          <div class="prod-sizes">
+            <button class="prod-size-btn" onclick="selectSize(this)">S</button>
+            <button class="prod-size-btn active" onclick="selectSize(this)">M</button>
+            <button class="prod-size-btn" onclick="selectSize(this)">L</button>
+            <button class="prod-size-btn" onclick="selectSize(this)">XL</button>
+            <button class="prod-size-btn disabled" disabled>XXL</button>
+          </div>
+
+          <div class="prod-section-title">Check Delivery &amp; Services</div>
+          <div class="prod-pincode">
+            <input type="text" placeholder="Enter Pincode" maxlength="6" pattern="[0-9]*" />
+            <button>CHECK</button>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:12px; margin-bottom:24px;">
+            <div style="display:flex; align-items:center; gap:12px; font-size:12px; color:#555;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+              <span>Get it by <b>Tomorrow, 5 PM</b></span>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px; font-size:12px; color:#555;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.5"><path d="M21.5 12H16c-.7 2-2 3-4 3s-3.3-1-4-3H2.5"/><path d="M5.5 5.1L2 12v6c0 1.1.9 2 2 2h16a2 2 0 002-2v-6l-3.4-6.9A2 2 0 0017 4H7a2 2 0 00-1.5 1.1z"/></svg>
+              <span>Pay on delivery available</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px; font-size:12px; color:#555;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.5"><polyline points="1 4 1 10 7 10"></polyline><polyline points="23 20 23 14 17 14"></polyline><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path></svg>
+              <span>Easy 7 days return &amp; exchange available</span>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-btn" onclick="toggleAccordion(this)">
+                Product Description
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="accordion-content">
+                <div class="accordion-inner">
+                  Elevate your everyday style with our 100% Cotton Regular Fit Shirt. Designed for maximum comfort and a sharp silhouette, this shirt features a classic collar, button-down front, and is crafted from premium breathable cotton fabric ideal for all-day wear.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-btn" onclick="toggleAccordion(this)">
+                Material &amp; Care
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="accordion-content">
+                <div class="accordion-inner">
+                  <ul style="padding-left:16px;">
+                    <li>100% Premium Cotton</li>
+                    <li>Machine wash cold with like colors</li>
+                    <li>Do not bleach</li>
+                    <li>Tumble dry low</li>
+                    <li>Warm iron if needed</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="divider" style="margin:24px 0;"></div>
+        <section class="section" style="padding-top:0;">
+          <div class="section-header"><span class="section-title">Similar Products</span></div>
+          <div class="products-scroll" style="padding:0 20px;">
+             <!-- Copying two product cards as similar products -->
+             <div class="product-card" onclick="openProductPage(this); return false;"><div class="product-img"><img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/1_f82fe4db-e2a2-4339-b518-237748c9bc51.jpg?v=1779298233" alt="Cotton Shirt Navy" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjwvc3ZnPg=='"/><div class="wishlist-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div></div><div class="product-info"><div class="product-title">100% Cotton Regular Fit Shirt</div><div class="product-type">Shirts</div><div class="product-price">&#8377;1,099</div></div></div>
+             <div class="product-card" onclick="openProductPage(this); return false;"><div class="product-img"><img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/1_51c8463f-5a77-4e54-a8dd-377f46a02bd9.jpg?v=1780837452" alt="Linen Stripe Shirt" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjwvc3ZnPg=='"/><div class="product-badge">LINEN</div><div class="wishlist-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div></div><div class="product-info"><div class="product-title">Cotton Linen Stripes Shirt</div><div class="product-type">Shirts</div><div class="product-price">&#8377;1,799</div></div></div>
+          </div>
+        </section>
+
+        <div style="height: 40px;"></div>
+        
+        <div class="prod-sticky-footer">
+          <button class="btn-add-cart" onclick="addToCartClick()" aria-label="Add to Cart">
+            <div style="position:relative; display:inline-flex; align-items:center; justify-content:center;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+              <div class="cart-action-wrapper" style="position:absolute; top:-2px; right:-6px; width:14px; height:14px; background:#fff; color:#111; border-radius:50%; display:flex; align-items:center; justify-content:center;">
+                <svg class="cart-icon-plus" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="position:absolute; transition: transform 0.3s, opacity 0.3s;"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                <svg class="cart-icon-check" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="position:absolute; transform: scale(0) rotate(-90deg); opacity: 0; transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+            </div>
+          </button>
+          <button class="btn-buy-now" onclick="openCheckoutPage()">
+            BUY NOW
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- CHECKOUT VIEW -->
+  <div id="view-checkout" style="display:block; background:#f9fafb; min-height:100vh; position:fixed; top:0; left:0; width:100%; height:100vh; overflow-y:auto; z-index:2100; padding-bottom:100px; transform: translateX(100%); transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);">
+    <div style="display:flex; align-items:center; padding:16px 20px; background:#fff; position:sticky; top:0; z-index:50; border-bottom:1px solid #e8e8e8; gap:16px;">
+      <button class="header-icon-btn" onclick="closeCheckoutPage(); return false;" aria-label="Back">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      </button>
+      <div style="font-weight:800; font-size:16px; letter-spacing:1px; text-transform:uppercase;">Checkout</div>
+      <div style="width:40px;"></div>
+    </div>
+
+    <div style="padding:16px;">
+      <!-- Order Summary -->
+      <div style="background:#fff; border-radius:8px; padding:16px; margin-bottom:16px; box-shadow:0 2px 8px rgba(0,0,0,0.05);">
+        <div style="font-size:12px; font-weight:700; color:#888; text-transform:uppercase; margin-bottom:12px; letter-spacing:1px;">Order Summary</div>
+        <div style="display:flex; gap:16px;">
+          <img id="checkoutProdImg" src="" style="width:80px; height:100px; object-fit:cover; border-radius:4px; background:#eee;" alt="Product">
+          <div style="flex:1; display:flex; flex-direction:column; justify-content:center;">
+            <div id="checkoutProdTitle" style="font-size:14px; font-weight:600; color:#111; margin-bottom:8px; line-height:1.4;"></div>
+            <div id="checkoutProdPrice" style="font-size:16px; font-weight:800; color:#111;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shipping Info -->
+      <div style="background:#fff; border-radius:8px; padding:16px; margin-bottom:16px; box-shadow:0 2px 8px rgba(0,0,0,0.05);">
+        <div style="font-size:12px; font-weight:700; color:#888; text-transform:uppercase; margin-bottom:16px; letter-spacing:1px;">Shipping Details</div>
+        <div style="margin-bottom:12px;">
+          <input type="text" placeholder="Full Name" style="width:100%; padding:12px; border:1px solid #e8e8e8; border-radius:4px; font-size:14px; outline:none;">
+        </div>
+        <div style="margin-bottom:12px;">
+          <input type="tel" placeholder="Mobile Number" style="width:100%; padding:12px; border:1px solid #e8e8e8; border-radius:4px; font-size:14px; outline:none;">
+        </div>
+        <div style="margin-bottom:12px;">
+          <textarea placeholder="Complete Address" rows="3" style="width:100%; padding:12px; border:1px solid #e8e8e8; border-radius:4px; font-size:14px; outline:none; resize:none; font-family:inherit;"></textarea>
+        </div>
+        <div>
+          <input type="text" placeholder="Pincode" style="width:100%; padding:12px; border:1px solid #e8e8e8; border-radius:4px; font-size:14px; outline:none;">
+        </div>
+      </div>
+
+      <!-- Payment Method -->
+      <div style="background:#fff; border-radius:8px; padding:16px; margin-bottom:16px; box-shadow:0 2px 8px rgba(0,0,0,0.05);">
+        <div style="font-size:12px; font-weight:700; color:#888; text-transform:uppercase; margin-bottom:16px; letter-spacing:1px;">Payment Method</div>
+        
+        <label style="display:flex; align-items:center; justify-content:space-between; padding:12px; border:1px solid #111; border-radius:4px; margin-bottom:12px; cursor:pointer;">
+          <div style="display:flex; align-items:center; gap:12px;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+            <span style="font-weight:600; font-size:14px;">Pay Online (UPI / Cards)</span>
+          </div>
+          <input type="radio" name="payment" checked style="accent-color:#111; width:16px; height:16px;">
+        </label>
+        
+        <label style="display:flex; align-items:center; justify-content:space-between; padding:12px; border:1px solid #e8e8e8; border-radius:4px; cursor:pointer;">
+          <div style="display:flex; align-items:center; gap:12px;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            <span style="font-weight:600; font-size:14px;">Cash on Delivery</span>
+          </div>
+          <input type="radio" name="payment" style="accent-color:#111; width:16px; height:16px;">
+        </label>
+      </div>
+    </div>
+
+    <!-- Sticky Place Order -->
+    <div style="position:fixed; bottom:0; left:0; right:0; background:#fff; padding:16px; border-top:1px solid #e8e8e8; display:flex; justify-content:space-between; align-items:center; box-shadow:0 -2px 10px rgba(0,0,0,0.05); z-index:100;">
+      <div>
+        <div style="font-size:12px; color:#555;">Total Amount</div>
+        <div id="checkoutTotalPrice" style="font-size:18px; font-weight:800; color:#111;"></div>
+      </div>
+      <button style="background:#111; color:#fff; border:none; padding:14px 32px; border-radius:4px; font-size:14px; font-weight:700; letter-spacing:1px; cursor:pointer;" onclick="placeOrder()">PLACE ORDER</button>
+    </div>
+  </div>
+
+  <!-- SPA View Search removed, converted to slide-out menu -->
+
+  <nav class="bottom-nav" id="bottomNav">
+    <a class="nav-item active" href="#" onclick="switchTab('home', this); return false;">
+      <svg width="22" height="22" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
+      <span class="nav-label">Home</span>
+    </a>
+    <a class="nav-item" href="#" onclick="switchTab('offers', this); return false;">
+      <svg width="22" height="22" viewBox="0 0 24 24"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+      <span class="nav-label">Offers</span>
+    </a>
+    <a class="nav-item" href="#" onclick="switchTab('cart', this); return false;">
+      <div style="position:relative; display:flex; align-items:center; justify-content:center;">
+        <svg width="22" height="22" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <div class="cart-badge" style="position:absolute; top:-4px; right:-8px; background:#e11d48; color:#fff; font-size:10px; font-weight:800; min-width:16px; height:16px; border-radius:8px; display:none; align-items:center; justify-content:center; padding:0 4px; border:1.5px solid #fff;">0</div>
+      </div>
+      <span class="nav-label">Cart</span>
+    </a>
+    <a class="nav-item" href="#" onclick="switchTab('profile', this); return false;">
+      <svg width="22" height="22" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4.5"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+      <span class="nav-label">Profile</span>
+    </a>
+  </nav>
+
+</div>
+
+  <aside id="searchSideMenu" class="search-side-menu">
+    <div class="side-menu-header" style="gap:12px;">
+      <button onclick="toggleSearchMenu(); return false;" class="header-icon-btn" aria-label="Back">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+      </button>
+      <div class="drawer-search-box">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21"/></svg>
+        <input id="searchInputField" type="text" placeholder="Search T&amp;W" style="flex:1; border:none; background:transparent; outline:none; font-size:12px; color:#333; width:100%; letter-spacing:0.2px; font-family:inherit; line-height:15px; height:15px;" onkeydown="if(event.key === 'Enter') { toggleSearchMenu(); window.scrollTo(0,0); }" oninput="document.getElementById('clearSearchBtn').style.display = this.value.length > 0 ? 'flex' : 'none';" />
+        <button id="clearSearchBtn" type="button" onclick="const input = document.getElementById('searchInputField'); input.value=''; input.focus(); this.style.display='none';" style="background:none; border:none; padding:0; cursor:pointer; align-items:center; justify-content:center; display:none; height:15px; width:15px;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+    
+    <div class="side-menu-content" style="padding:24px 20px;">
+      <div style="font-weight:700; font-size:13px; color:#888; text-transform:uppercase; letter-spacing:1px; margin-bottom:16px;">Recent Searches</div>
+      <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:32px;">
+        <span onclick="document.getElementById('searchInputField').value='Formal Shirts'" style="padding:8px 16px; background:#f5f5f5; border-radius:20px; font-size:13px; color:#333; display:flex; align-items:center; gap:6px; cursor:pointer;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Formal Shirts
+        </span>
+        <span onclick="document.getElementById('searchInputField').value='Blue Jeans'" style="padding:8px 16px; background:#f5f5f5; border-radius:20px; font-size:13px; color:#333; display:flex; align-items:center; gap:6px; cursor:pointer;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Blue Jeans
+        </span>
+      </div>
+
+      <div style="font-weight:700; font-size:13px; color:#888; text-transform:uppercase; letter-spacing:1px; margin-bottom:16px; display:flex; align-items:center; gap:6px;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e11d48" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+        Trending Searches
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:10px;">
+        <span onclick="document.getElementById('searchInputField').value='Oversized Tees'" style="padding:8px 16px; border:1px solid #e8e8e8; border-radius:20px; font-size:13px; color:#000; font-weight:500; cursor:pointer;">Oversized Tees</span>
+        <span onclick="document.getElementById('searchInputField').value='Summer Linens'" style="padding:8px 16px; border:1px solid #e8e8e8; border-radius:20px; font-size:13px; color:#000; font-weight:500; cursor:pointer;">Summer Linens</span>
+        <span onclick="document.getElementById('searchInputField').value='Baggy Jeans'" style="padding:8px 16px; border:1px solid #e8e8e8; border-radius:20px; font-size:13px; color:#000; font-weight:500; cursor:pointer;">Baggy Jeans</span>
+        <span onclick="document.getElementById('searchInputField').value='Printed Shirts'" style="padding:8px 16px; border:1px solid #e8e8e8; border-radius:20px; font-size:13px; color:#000; font-weight:500; cursor:pointer;">Printed Shirts</span>
+      </div>
+    </div>
+  </aside>
+  <div id="menuOverlay" class="menu-overlay"></div>
+  <aside id="sideMenu" class="side-menu">
+    <div class="side-menu-header">
+      <div class="side-menu-greeting">Hello, <b>Sign In</b></div>
+      <button id="closeMenuBtn" class="header-icon-btn" aria-label="Close Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="side-menu-content">
+      <a href="#" class="side-menu-link">New In</a>
+      <div class="side-menu-divider"></div>
+      
+      <div class="side-menu-section-title">Shirts</div>
+      <a href="#" class="side-menu-sublink">Formal Shirts</a>
+      <a href="#" class="side-menu-sublink">Casual Shirts</a>
+      <a href="#" class="side-menu-sublink">Printed Shirts</a>
+      <a href="#" class="side-menu-sublink">Checked Shirts</a>
+      <a href="#" class="side-menu-sublink">Linen Shirts</a>
+      <a href="#" class="side-menu-sublink">Party Wear</a>
+
+      <div class="side-menu-divider"></div>
+      
+      <div class="side-menu-section-title">Jeans</div>
+      <a href="#" class="side-menu-sublink">Slim Fit</a>
+      <a href="#" class="side-menu-sublink">Regular Fit</a>
+      <a href="#" class="side-menu-sublink">Loose Fit</a>
+
+      <div class="side-menu-divider"></div>
+      
+      <div class="side-menu-section-title">Kids</div>
+      <a href="#" class="side-menu-sublink">Boys (2-14 Yrs)</a>
+      <a href="#" class="side-menu-sublink">Girls (2-14 Yrs)</a>
+
+      <div class="side-menu-divider"></div>
+      <a href="#" class="side-menu-link">My Orders</a>
+      <a href="#" class="side-menu-link">Customer Support</a>
+    </div>
+  </aside>
+
+<script>
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const closeMenuBtn = document.getElementById('closeMenuBtn');
+  const sideMenu = document.getElementById('sideMenu');
+  const menuOverlay = document.getElementById('menuOverlay');
+
+  function toggleMenu() {
+    sideMenu.classList.toggle('active');
+    menuOverlay.classList.toggle('active');
+    document.body.style.overflow = sideMenu.classList.contains('active') ? 'hidden' : '';
+  }
+
+  function toggleSearchMenu() {
+    const searchSideMenu = document.getElementById('searchSideMenu');
+    searchSideMenu.classList.toggle('active');
+    menuOverlay.classList.toggle('active');
+    document.body.style.overflow = searchSideMenu.classList.contains('active') ? 'hidden' : '';
+  }
+
+  hamburgerBtn.addEventListener('click', toggleMenu);
+  closeMenuBtn.addEventListener('click', toggleMenu);
+  
+  menuOverlay.addEventListener('click', () => {
+    sideMenu.classList.remove('active');
+    document.getElementById('searchSideMenu').classList.remove('active');
+    menuOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+  });
+
+  function switchTab(viewId, element) {
+    document.getElementById('view-home').style.display = 'none';
+    document.getElementById('view-offers').style.display = 'none';
+    document.getElementById('view-cart').style.display = 'none';
+    document.getElementById('view-profile').style.display = 'none';
+    const wl = document.getElementById('view-wishlist');
+    if (wl) wl.style.display = 'none';
+    
+    // Slide-over views manage themselves, standard views get block display
+    if (viewId !== 'product' && viewId !== 'checkout') {
+      document.getElementById('view-' + viewId).style.display = 'block';
+    }
+    
+    if (viewId === 'cart' && typeof globalCart !== 'undefined' && globalCart.length === 0) {
+      document.body.style.overflow = 'hidden';
+    } else if (viewId !== 'product' && viewId !== 'checkout') {
+      document.body.style.overflow = '';
+    }
+    
+    if (element) {
+      document.querySelectorAll('#bottomNav .nav-item').forEach(el => el.classList.remove('active'));
+      element.classList.add('active');
+    }
+    window.scrollTo(0, 0);
+  }
+
+  function openProductPage(cardElement) {
+    // Basic population of product info from clicked card
+    if(cardElement) {
+      const img = cardElement.querySelector('img');
+      const title = cardElement.querySelector('.product-title, .cat-label, .occasion-label');
+      const price = cardElement.querySelector('.product-price');
+      if(img) document.getElementById('prodMainImg1').src = img.src;
+      if(title) document.getElementById('prodTitleText').textContent = title.textContent;
+      if(price) {
+        document.getElementById('prodPriceText').textContent = price.textContent;
+      } else {
+        // If there's no price on the clicked card, default to Rs. 1,099 to keep format
+        document.getElementById('prodPriceText').textContent = '\u20B91,099';
+      }
+    }
+    
+    // Reset Add to Cart button state for the new product
+    const btnAdd = document.querySelector('.btn-add-cart');
+    if (btnAdd) {
+      btnAdd.dataset.added = 'false';
+      const plus = btnAdd.querySelector('.cart-icon-plus');
+      const check = btnAdd.querySelector('.cart-icon-check');
+      if (plus && check) {
+        plus.style.transform = 'scale(1) rotate(0deg)';
+        plus.style.opacity = '1';
+        check.style.transform = 'scale(0) rotate(-90deg)';
+        check.style.opacity = '0';
+      }
+    }
+    
+    const vp = document.getElementById('view-product');
+    vp.style.transform = 'translateX(0)';
+    document.body.style.overflow = 'hidden';
+    vp.scrollTo(0, 0);
+  }
+
+  function closeProductPage() {
+    document.getElementById('view-product').style.transform = 'translateX(100%)';
+    if (document.getElementById('view-cart').style.display === 'block' && typeof globalCart !== 'undefined' && globalCart.length === 0) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }
+
+  function closeCheckoutPage() {
+    document.getElementById('view-checkout').style.transform = 'translateX(100%)';
+    if (document.getElementById('view-product').style.transform === 'translateX(0px)' || document.getElementById('view-product').style.transform === 'translateX(0)') {
+      document.body.style.overflow = 'hidden';
+    } else if (document.getElementById('view-cart').style.display === 'block' && typeof globalCart !== 'undefined' && globalCart.length === 0) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }
+
+  function selectColor(btn, colorName) {
+    document.querySelectorAll('.prod-color-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('selectedColorName').textContent = colorName;
+  }
+
+  function selectSize(btn) {
+    if(btn.classList.contains('disabled')) return;
+    document.querySelectorAll('.prod-size-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+
+  function toggleAccordion(btn) {
+    const content = btn.nextElementSibling;
+    const svg = btn.querySelector('svg');
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+      svg.style.transform = 'rotate(0deg)';
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+      svg.style.transform = 'rotate(180deg)';
+    }
+    svg.style.transition = 'transform 0.3s ease';
+  }
+
+  function showToast(message) {
+    let existing = document.querySelector('.toast-notification');
+    if(existing) existing.remove();
+
+    const toast = document.createElement('div');
+    toast.className = 'toast-notification';
+    toast.innerHTML = `
+      <div class="toast-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      <div class="toast-title">${message}</div>
+    `;
+    document.body.appendChild(toast);
+    
+    toast.offsetHeight; // trigger reflow
+    toast.classList.add('show');
+    
+    setTimeout(() => {
+      toast.classList.remove('show');
+      setTimeout(() => toast.remove(), 500);
+    }, 4000);
+  }
+
+  let globalCart = [];
+
+  function updateCartBadges() {
+    const totalItems = globalCart.reduce((sum, item) => sum + item.quantity, 0);
+    const badges = document.querySelectorAll('.cart-badge');
+    badges.forEach(b => {
+      b.textContent = totalItems;
+      b.style.display = totalItems > 0 ? 'flex' : 'none';
+    });
+  }
+
+  function renderCart() {
+    const container = document.getElementById('cartItemsContainer');
+    const emptyState = document.getElementById('cartEmptyState');
+    const detailsContainer = document.getElementById('cartDetailsContainer');
+    const cartView = document.getElementById('view-cart');
+    
+    if (globalCart.length === 0) {
+      container.style.display = 'none';
+      detailsContainer.style.display = 'none';
+      emptyState.style.display = 'flex';
+      emptyState.style.flexDirection = 'column';
+      emptyState.style.justifyContent = 'center';
+      emptyState.style.height = '100%';
+      cartView.style.overflow = 'hidden';
+      cartView.style.height = '100vh';
+      if (cartView.style.display === 'block') {
+        document.body.style.overflow = 'hidden';
+      }
+      return;
+    }
+    
+    container.style.display = 'block';
+    detailsContainer.style.display = 'block';
+    emptyState.style.display = 'none';
+    cartView.style.overflow = 'auto';
+    cartView.style.height = 'auto';
+    document.body.style.overflow = '';
+    
+    let html = '';
+    let total = 0;
+    
+    globalCart.forEach((item, index) => {
+      total += item.price * item.quantity;
+      html += `
+        <div style="background:#fff; padding:16px; margin-bottom:12px; position:relative;">
+          <div style="display:flex; gap:16px;">
+            <img src="${item.img}" style="width:80px; height:100px; object-fit:cover; border-radius:4px;"/>
+            <div style="flex:1; display:flex; flex-direction:column;">
+              <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                <div style="font-weight:600; font-size:14px; margin-bottom:4px; padding-right:12px; line-height:1.3;">${item.title}</div>
+                <button onclick="removeFromCart(${index})" style="background:none; border:none; cursor:pointer; padding:4px; margin-top:-4px; margin-right:-4px;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                </button>
+              </div>
+              <div style="color:#888; font-size:12px; margin-bottom:8px;">Size: M | Color: Default</div>
+              <div style="font-weight:800; font-size:15px; margin-bottom:12px;">&#8377;${item.price.toLocaleString('en-IN')}</div>
+              <div style="display:flex; align-items:center; border:1px solid #e8e8e8; border-radius:4px; width:fit-content; margin-top:auto;">
+                <button onclick="updateCartQuantity(${index}, -1)" style="border:none; background:none; padding:4px 12px; font-size:16px; cursor:pointer;">-</button>
+                <span style="font-size:14px; font-weight:600; padding:0 8px; min-width:24px; text-align:center;">${item.quantity}</span>
+                <button onclick="updateCartQuantity(${index}, 1)" style="border:none; background:none; padding:4px 12px; font-size:16px; cursor:pointer;">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    });
+    
+    container.innerHTML = html;
+    document.getElementById('cartTotalMrp').innerHTML = '&#8377;' + total.toLocaleString('en-IN');
+    document.getElementById('cartTotalAmount').innerHTML = '&#8377;' + total.toLocaleString('en-IN');
+  }
+
+  function updateCartQuantity(index, delta) {
+    globalCart[index].quantity += delta;
+    if (globalCart[index].quantity <= 0) {
+      globalCart.splice(index, 1);
+    }
+    renderCart();
+    updateCartBadges();
+  }
+
+  function removeFromCart(index) {
+    globalCart.splice(index, 1);
+    renderCart();
+    updateCartBadges();
+  }
+
+  function addToCartClick() {
+    const btn = document.querySelector('.btn-add-cart');
+    const plus = btn.querySelector('.cart-icon-plus');
+    const check = btn.querySelector('.cart-icon-check');
+    if (!plus || !check) return;
+    
+    if (btn.dataset.added === 'true') {
+      showToast('Already added to cart');
+      return;
+    }
+    btn.dataset.added = 'true';
+    
+    // Add to globalCart array
+    const prodImg = document.getElementById('prodMainImg1').src;
+    const prodTitle = document.getElementById('prodTitleText').textContent;
+    const prodPriceStr = document.getElementById('prodPriceText').textContent;
+    const prodPrice = parseInt(prodPriceStr.replace(/[^0-9]/g, ''), 10) || 1099;
+
+    const existingIndex = globalCart.findIndex(item => item.title === prodTitle);
+    if (existingIndex > -1) {
+      globalCart[existingIndex].quantity += 1;
+    } else {
+      globalCart.push({ img: prodImg, title: prodTitle, price: prodPrice, quantity: 1 });
+    }
+    
+    renderCart();
+    updateCartBadges();
+
+    plus.style.transform = 'scale(0) rotate(90deg)';
+    plus.style.opacity = '0';
+    check.style.transform = 'scale(1) rotate(0deg)';
+    check.style.opacity = '1';
+    
+    btn.style.background = '#16a34a';
+    btn.style.color = '#fff';
+    btn.style.borderColor = '#16a34a';
+    setTimeout(() => {
+      btn.style.background = '';
+      btn.style.color = '';
+      btn.style.borderColor = '';
+    }, 2000);
+    
+    showToast('Added to cart');
+  }
+
+  function scrollProdGallery(direction) {
+    const gallery = document.getElementById('prodGallery');
+    const width = gallery.clientWidth;
+    const currentIndex = Math.round(gallery.scrollLeft / width);
+    const maxIndex = gallery.children.length - 1;
+    let targetIndex = currentIndex + direction;
+    if (targetIndex < 0) targetIndex = maxIndex;
+    if (targetIndex > maxIndex) targetIndex = 0;
+    gallery.scrollTo({left: width * targetIndex, behavior: 'smooth'});
+  }
+
+  const prodGallery = document.getElementById('prodGallery');
+  const prodDots = document.querySelectorAll('.prod-dot');
+  if(prodGallery && prodDots) {
+    prodGallery.addEventListener('scroll', () => {
+      const scrollLeft = prodGallery.scrollLeft;
+      const width = prodGallery.clientWidth;
+      const index = Math.round(scrollLeft / width);
+      prodDots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+      });
+    });
+  }
+
+  const carousel = document.getElementById('carousel');
+  const track = document.getElementById('carouselTrack');
+  const dotsContainer = document.getElementById('carouselDots');
+  const slides = Array.from(track.children);
+  const slidesCount = slides.length;
+  let current = 0, timer;
+
+  // Create dots
+  for(let i=0; i<slidesCount; i++){
+    const dot = document.createElement('button');
+    dot.className = 'carousel-dot' + (i===0?' active':'');
+    dot.setAttribute('aria-label', 'Slide '+(i+1));
+    dot.onclick = () => { stopPlay(); goTo(i); autoPlay(); };
+    dotsContainer.appendChild(dot);
+  }
+
+  // Clones for infinite loop to fill ultra-wide screens
+  const clonesCount = 4;
+  for (let i = 0; i < clonesCount; i++) {
+    // Clone from start
+    const cloneStart = slides[i % slidesCount].cloneNode(true);
+    track.appendChild(cloneStart);
+    // Clone from end
+    const cloneEnd = slides[slidesCount - 1 - (i % slidesCount)].cloneNode(true);
+    track.insertBefore(cloneEnd, track.firstChild);
+  }
+
+  let isTransitioning = false;
+
+  function getOffsetForIndex(index) {
+    const slide = track.children[index];
+    const carouselWidth = carousel.clientWidth;
+    // Align the active slide's right edge to the carousel's far right edge
+    return carouselWidth - (slide.offsetLeft + slide.offsetWidth);
+  }
+
+  function updateTransform(index, withTransition = true) {
+    track.style.transition = withTransition ? 'transform .4s ease' : 'none';
+    track.style.transform = 'translateX(' + getOffsetForIndex(index) + 'px)';
+  }
+
+  let transitionTimeout;
+
+  function handleTransitionEnd() {
+    isTransitioning = false;
+    clearTimeout(transitionTimeout);
+    if (current < 0) {
+      current = (current % slidesCount + slidesCount) % slidesCount;
+      updateTransform(current + clonesCount, false);
+    } else if (current >= slidesCount) {
+      current = current % slidesCount;
+      updateTransform(current + clonesCount, false);
+    }
+  }
+
+  function goTo(n) {
+    if (isTransitioning) return;
+    current = n;
+    const domIndex = current + clonesCount;
+    updateTransform(domIndex, true);
+    isTransitioning = true;
+    
+    let dotIndex = (current % slidesCount + slidesCount) % slidesCount;
+    document.querySelectorAll('.carousel-dot').forEach((d, i) => d.classList.toggle('active', i === dotIndex));
+
+    clearTimeout(transitionTimeout);
+    transitionTimeout = setTimeout(() => {
+      if (isTransitioning) handleTransitionEnd();
+    }, 450);
+  }
+
+  track.addEventListener('transitionend', (e) => {
+    if (!e.propertyName.includes('transform') || !isTransitioning) return;
+    handleTransitionEnd();
+  });
+
+  function stopPlay(){clearInterval(timer)}
+  function autoPlay(){timer=setInterval(()=>goTo(current+1),3500)}
+
+  window.addEventListener('resize', () => {
+    updateTransform(current + clonesCount, false);
+  });
+  
+  // Initial setup: Wait for DOM layout
+  setTimeout(() => updateTransform(current + clonesCount, false), 0);
+  autoPlay();
+
+  let startX;
+  
+  // Touch Swiping
+  carousel.addEventListener('touchstart', e => { startX = e.touches[0].clientX; stopPlay(); }, {passive:true});
+  carousel.addEventListener('touchend', e => {
+    if (isTransitioning) return;
+    const diff = startX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
+    autoPlay();
+  });
+  
+  // Mouse Drag Swiping
+  let isDragging = false;
+  carousel.addEventListener('mousedown', e => { isDragging = true; startX = e.clientX; stopPlay(); e.preventDefault(); });
+  window.addEventListener('mouseup', e => {
+    if (!isDragging) return;
+    isDragging = false;
+    if (isTransitioning) return;
+    const diff = startX - e.clientX;
+    if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
+    autoPlay();
+  });
+
+  document.querySelectorAll('.tag').forEach(t=>{
+    t.addEventListener('click',()=>{
+      document.querySelectorAll('.tag').forEach(x=>x.classList.remove('active'));
+      t.classList.add('active');
+    });
+  });
+  function openCheckoutPage() {
+    const prodImg = document.getElementById('prodMainImg1').src;
+    const prodTitle = document.getElementById('prodTitleText').textContent;
+    const prodPrice = document.getElementById('prodPriceText').textContent;
+
+    document.getElementById('checkoutProdImg').src = prodImg;
+    document.getElementById('checkoutProdTitle').textContent = prodTitle;
+    document.getElementById('checkoutProdPrice').textContent = prodPrice;
+    document.getElementById('checkoutTotalPrice').textContent = prodPrice;
+
+    const vc = document.getElementById('view-checkout');
+    vc.style.transform = 'translateX(0)';
+    document.body.style.overflow = 'hidden';
+    vc.scrollTo(0, 0);
+  }
+
+  function placeOrder() {
+    showToast('Order placed successfully!');
+    setTimeout(() => {
+      document.getElementById('view-checkout').style.transform = 'translateX(100%)';
+      document.getElementById('view-product').style.transform = 'translateX(100%)';
+      switchTab('home', document.querySelector('#bottomNav .nav-item:first-child'));
+      window.scrollTo(0,0);
+    }, 1500);
+  }
+
+  function openCheckoutPageFromCart() {
+    let total = 0;
+    globalCart.forEach(item => total += item.price * item.quantity);
+    
+    if(globalCart.length > 0) {
+      document.getElementById('checkoutProdImg').src = globalCart[0].img;
+      document.getElementById('checkoutProdTitle').textContent = globalCart.length === 1 ? globalCart[0].title : `Your Cart (${globalCart.length} Items)`;
+      document.getElementById('checkoutProdPrice').innerHTML = '&#8377;' + total.toLocaleString('en-IN');
+      document.getElementById('checkoutTotalPrice').innerHTML = '&#8377;' + total.toLocaleString('en-IN');
+    }
+
+    const vc = document.getElementById('view-checkout');
+    vc.style.transform = 'translateX(0)';
+    document.body.style.overflow = 'hidden';
+    vc.scrollTo(0, 0);
+  }
+
+  // Initialize empty cart state
+  renderCart();
+  updateCartBadges();
+</script>
+</body>
+</html>
